@@ -26,6 +26,13 @@ public class jwtAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
     private JwtHelperClass jwtHelperClass;
 
+    /***
+     * Get Token from request
+     * Validate Token
+     * GetUsername from token
+     * Load user associated with this token
+     * set authentication
+     ***/
 
     @Autowired
     private UserDetailsService userDetailsService; //InMemoryUserDetailsManager users will come here
