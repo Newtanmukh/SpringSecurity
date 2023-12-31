@@ -29,7 +29,7 @@ public class AuthController {
     @Autowired
     private JwtHelperClass jwtHelperClass;
 
-    private Logger logger = LoggerFactory.getLogger(AuthController.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(AuthController.class);
 
 
     @PostMapping("/login")
