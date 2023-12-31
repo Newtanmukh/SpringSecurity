@@ -22,7 +22,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
+        //Functional Interface : Pass Lambda Function.
         http.csrf(csrf -> csrf.disable())
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeRequests().
